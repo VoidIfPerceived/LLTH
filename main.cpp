@@ -5,12 +5,12 @@ using namespace std;
 
 int main() {
     // This program prints "Hello, World!" to the console.
-    printf("Hello, World!\n");
-    string input;
-    cout << "Enter the words for your song: ";
-    cin >> input;
-    cout << "Lyrics: \n" << input;
+    string lyrics;
 
-    cout << "Confirm syllablizer function is working: \n" << lyricSystem::syllablizer();
+    cout << "WELCOME TO L1L1TH\n";
+    uiInputSystem::lyric_input(lyrics);
+
+    lyricSystem::syllablizer(lyrics);
+
     return 0;
 };

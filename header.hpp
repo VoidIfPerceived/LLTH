@@ -3,7 +3,10 @@
 
 // Declare items within lyric_system.cpp
 namespace lyricSystem {
-    int syllablizer();
+    int syllablizer(std::string input);
+}
+namespace uiInputSystem {
+    int lyric_input(std::string &input);
 }
 
 #endif

@@ -1,13 +1,19 @@
 #include <iostream>
 #include "../header.hpp"
 namespace lyricSystem {
-    int syllablizer() {
+    int syllablizer(std::string input) {
         // This function parses the lyrics from an input and inserts each syllable into a vector
         int error;
-    
 
-
-        error = 0;
+        std::cout << "Input Out through Syllablizer: " << input << "\n";
+        if (input == "") {
+            error = 1; // Error: No lyrics found
+        } else if (input.length() > 0) {
+            error = 0; // No errors
+        } else {
+            error = 2; //Unknown error
+        }
+        
 
         if (error == 0) {
             std::cout << "Syllablizer: No Errors \n";
